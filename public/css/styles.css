@@ -1,6 +1,370 @@
-/******* Change Box Model ***************/
+ 
 *,
 *:before,
 *:after {
   box-sizing: border-box;
+}
+
+html{
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family:'Edu NSW ACT Foundation',cursive;
+  background-image: url(../images/site/small_check.jpg);
+  background-size: cover;
+  background-position: center;
+  min-width: 800px;
+}
+
+
+#wrapper{
+     
+  background-color: #ffffff;
+  border: 4px solid #4c96d7;
+  margin: auto;
+  padding: 2rem;
+  max-width: 800px;
+   
+}
+
+#top-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+ 
+
+
+ .siteName a {
+  margin-left: auto; 
+  color: #3a3a3a;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+#my-account a{
+  margin-right: 10rem;
+  color: #3a3a3a;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+nav ul{
+  display: flex;
+  justify-content: flex-start;
+  background-color: #3a3a3a;
+  margin: 0 auto;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a{
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+}
+
+nav a:hover{
+  background-color: #4c96d7;
+  color: black;
+}
+
+section{
+  width:100%;
+  position: relative;
+}
+
+.textBox{
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  padding: 60px;
+  width: 290px;
+  color: rgb(26, 93, 247);
+  background-color: rgba(128, 128, 128, 0.274);
+  font-size: 1.2em;
+  font-weight:bold;
+}
+
+.main-img {
+  display:block;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto
+}
+
+.ownLarge{
+  opacity: 1;
+  min-width: 100px;
+  max-width: 125px;
+  margin-top: 15px
+}
+.own{
+  opacity: 0;    
+}
+
+#flex-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.upgrades h3{
+  margin-left: 1.2rem;
+}
+
+#reviews{
+  flex: 1;
+  line-height: 1.6rem;
+}
+
+#reviews h3{
+  margin-left: 2rem;
+}
+
+.upgrades{
+  flex: 1;
+}
+
+.upgradeWrap {
+  display: flex;
+  flex-wrap:wrap;
+  min-width: 300px;
+}
+
+article h3{
+  color: black;
+}
+
+.upgradeWrap img{
+  margin: 60px;
+}
+.upgrade-item{
+  margin:auto;
+  margin-bottom: 20px;
+}
+
+.upgrade-item img{
+  background-color: #4c96d7;
+  padding: 10px;
+  border: 1px black solid; 
+  height: 55px;
+  width: 55px;
+}
+
+.upgrade-caption{
+  text-align: center;
+}
+
+
+
+
+
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  html{
+      max-width: 100%;
+      box-sizing: border-box;
+  }
+  
+  *, *:before, *:after{
+   box-sizing: inherit;
+  }
+  body{
+      background-image: none;
+  }
+  #wrapper{
+      border: none;
+  }
+
+  #my-account{
+    margin-right: 1em;
+}
+
+
+  nav ul{
+      flex-flow: column wrap;
+      padding: 0;
+      max-width: 96%;
+  }
+
+  nav li{
+      font-size: 8pt;
+  } 
+
+  nav a{
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid rgba(255,255,255,0.3);
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+  nav li:last-of-type a {
+      border-bottom: none;
+  }
+  #flex-container{    
+      flex-direction: column-reverse;
+  }
+
+  .upgradeWrap img{
+      margin: 40px;
+  }
+  .upgrade-item{
+      margin:auto;
+      margin-bottom: 20px;
+  }
+  
+  .upgrade-item img{
+      background-color: #4c96d7;
+      padding: 10px;
+      border: 1px black solid; 
+      height: 55px;
+      width: 55px;
+  }
+
+  
+  .ownLarge{
+    opacity: 0;
+}
+
+
+  .ownLarge{
+    opacity: 1;
+    min-width: 100px;
+    max-width: 125px;
+    margin-top: 15px
+  }
+
+
+
+
+
+
+
+
+  .own{
+    opacity: 1;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 40%;
+}
+  footer {
+      text-align: center;
+      margin-left: 1rem;
+      margin-right: 1rem;
+   
+  }
+}
+
+
+@media only screen and (max-width: 100px){
+  html{
+      max-width: 100%;
+      box-sizing: border-box;
+  }
+  
+  *, *:before, *:after{
+   box-sizing: inherit;
+  }
+  body{
+      background-image: none;
+
+font-family:'Edu NSW ACT Foundation',cursive;
+        
+        background-position: center;
+        min-width: 100px;
+      }
+  
+  #wrapper{
+      border: none;
+      
+  }
+
+  #my-account{
+      margin-right: 0.5em;
+  }
+
+
+
+  #top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  }
+  
+   
+  
+  
+   .siteName a {
+    margin-left: auto; 
+    color: #3a3a3a;
+    text-decoration: none;
+    font-size: 2.5em;
+  }
+
+
+
+  nav ul{
+      flex-flow: column wrap;
+      padding: 0;
+      max-width: 70%;
+  }
+
+  nav li{
+      font-size: 8pt;
+  } 
+
+  nav a{
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid rgba(255,255,255,0.3);
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+
+  #flex-container{    
+      flex-direction: column-reverse;
+  }
+
+  .upgradeWrap img{
+      margin: 40px;
+  }
+  .upgrade-item{
+      margin:auto;
+      margin-bottom: 20px;
+  }
+  
+  .upgrade-item img{
+      background-color:#e6e6e6;
+      padding: 10px;
+      border: 1px black solid; 
+      height: 55px;
+      width: 55px;
+  }
+  .ownLarge{
+      opacity: 0;
+  }
+
+  .own{
+      opacity: 1;
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      max-width: 40%;
+  }
+  footer {
+      text-align: center;
+      margin-left: 1rem;
+      margin-right: 1rem;
+  }
 }
