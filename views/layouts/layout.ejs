@@ -2,73 +2,14 @@
 <html lang="en">
 <%- include('../partials/head') %>
 <body>
-   <div id="wrapper">
-    <%- include('../partials/header') %>
-    <%- include('../partials/navigation') %>
+    <div id="wrapper">
+        <%- include('../partials/header') %>
+        <%- include('../partials/navigation') %>
 
-<main>
-    <%- body %> 
+        <main>
+            <%- body %>
+        </main>
 
-
-
-    <section>
-        <h1>Welcome to  CSE Motors!</h1>
-        <img src="/new-repo/imges/vehicles/delorean.jpg" alt="delorean" class="main-img">
-
-        <div class="textBox"><strong>DMC Delorean</strong><br> 
-            Cup Holders <br>
-            Superman doors<br>
-            Fuzzy dice!<br>
-            <a href="index.html"title="Own Today"><img src="/new-repo/images/site/own_today.png" alt="Own Today" class="ownLarge"></a>
-        </div>
-        </section>
-
-        <a href="index.html"title="Own Today"><img src="/new-repo/images/site/own_today.png" alt="Own Today" class="ownLarge"></a>
-        <article> 
-       
-            <div id="flex-container"> 
-            <div class="upgrades">
-            <h3>Delorean Upgrades</h3>
-            <div class="upgradeWrap">
-            <div class="upgrade-item"><a href="#" title="Flux-Cap">
-            <img src="/new-repo/images/upgrades/flux-cap.png" class="upgrade-img" alt="Flux Capacitor">
-            <div class="upgrade-caption">Flux Capacitor</div></a>
-            </div>
-
-            <div class="upgrade-item"><a href="#" title="Flames">
-            <img src="/new-repo/images/upgrades/flame.jpg" class="upgrade-img" alt="flames">
-            <div class="upgrade-caption">Flames</div></a>
-            </div>
-
-            <div class="upgrade-item"><a href="#" title="Bumper Sticker">
-            <img src="/new-repo/images/upgrades/bumper_sticker.jpg" class="upgrade-img" alt="Bumper Sticker">
-            <div class="upgrade-caption">Bumper Sticker</div></a>
-            </div>
-
-            <div class="upgrade-item"><a href="#" title="Hub Caps">
-             <img src="/new-repo/images/upgrades/hub-cap.jpg" class="upgrade-img" alt="Hub Caps">
-             <div class="upgrade-caption">Hub Caps</div></a>
-            </div>
-            </div>
-            </div>
-              
-            <div id="reviews">
-            <h3>DMC Delorean Reviews</h3>
-        <ul>
-            <li>"So fast its almost like traveling in time." (4/5)</li>
-            <li>"Coolest ride on the road." (4/5)</li>
-            <li>"I'm feeling Marty McFly!" (5/5)</li>
-            <li>"The most futuristic ride of our day." (4.5/5)</li>
-            <li>"80's livin and I love it!" (5/5)</li>   
-        </ul>
+        <%- include('../partials/footer') %>
     </div>
-    </div>
-
-
-
-
-</main>
-<%- include('../partials/footer') %>
-</div> 
 </body>
-</html>
